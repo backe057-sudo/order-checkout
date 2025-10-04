@@ -6,7 +6,7 @@
 <title>Checkout — Address · Summary · Payment</title>
 <style>
   :root{
-      --accent: #FFA500;
+      --accent: #FFB300;
       --pay-green: #3b8132;
       --muted: #777;
       --border: #e6e6e6;
@@ -149,14 +149,14 @@
         <div style="font-weight:700;font-size:16px;margin-bottom:6px">Fortune, Soyabean Refined Oil 5L Jar + Fortune Everyday Basmati Rice, 5KG Bag Combo.</div>
         <div style="color:#FFB343;font-size:15px;margin-bottom:6px">★★★★★</div>
         <div style="margin-bottom:6px">Qty: 1</div>
-        <div><span style="color:green;font-weight:700;margin-right:6px">80%</span><span class="strike">₹2,499</span><span style="font-weight:700;margin-left:8px">₹499.00</span></div>
+        <div><span style="color:green;font-weight:700;margin-right:6px">80%</span><span class="strike">₹2,499.00</span><span style="font-weight:700;margin-left:8px">₹499.00</span></div>
       </div>
       
     </div>
   </div>
 
   <div class="card">
-    <div class="price-row"><div>Price (1 item)</div><div>₹2499.00</div></div>
+    <div class="price-row"><div>Price (1 item)</div><del>₹2499.00</del></div>
     <div class="price-row"><div>Discount</div><div class="green">₹2000.00</div></div>
     <div class="price-row"><div>Delivery Charges</div><div class="green">FREE Delivery</div></div>
     <hr style="border:none;border-top:1px solid var(--border);margin:12px 0">
@@ -171,7 +171,7 @@
 
 
   <div>
-    <button class="btn" style="width:100%;background:#FFB343" onclick="toPayment()">Continue</button>
+    <button class="btn" style="width:100%;background:#FFB300" onclick="toPayment()">Continue</button>
   </div>
 </section>
   
@@ -185,16 +185,16 @@
 
 
       <div class="upi-option" data-link="phonepe://upi/pay?pa=merchant@upi&pn=Merchant&am=499&cu=INR" onclick="selectUPI(this)">
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/DH9sX5y1/images.png" alt="images" border="0"></a>
+   <img src="https://i.ibb.co/DH9sX5y1/images.png" alt="images" border="0">
         <div>PhonePe</div>
       </div>
 
       <div class="upi-option" data-link="paytmmp://pay?pa=merchant@upi&pn=Merchant&am=499&cu=INR" onclick="selectUPI(this)">
-     <a href="https://imgbb.com/"><img src="https://i.ibb.co/tpd5J13X/paytm-icon.png" alt="paytm-icon" border="0"></a>        <div>Paytm</div>
+     <img src="https://i.ibb.co/tpd5J13X/paytm-icon.png" alt="paytm-icon" border="0">      <div>Paytm</div>
       </div>
 
       <div class="upi-option" data-link="tez://upi/pay?pa=merchant@upi&pn=Merchant&am=499&cu=INR" onclick="selectUPI(this)">
-       <a href="https://imgbb.com/"><img src="https://i.ibb.co/nNhW8D8h/google-pay-icon.png" alt="google-pay-icon" border="0"></a>
+       <img src="https://i.ibb.co/nNhW8D8h/google-pay-icon.png" alt="google-pay-icon" border="0">
         <div>Google Pay</div>
       </div>
 
@@ -459,3 +459,4 @@ function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(m){return 
 </script>
 </body>
   </html>
+  
